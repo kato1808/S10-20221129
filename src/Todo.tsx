@@ -5,7 +5,7 @@ type TodoType = {
 };
 
 export const Todo = (props: TodoType) => {
-  const { title, userid, completed } = props;
+  const { title, userId, completed } = props;
   const compeleteMark = completed ? "【完】" : "【未】";
-  return <p>{`${compeleteMark}${title}(ユーザ：${userid})`} </p>;
+  return <p>{`${compeleteMark}${title}(ユーザ：${userId})`} </p>;
 };
