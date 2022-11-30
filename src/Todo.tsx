@@ -1,4 +1,5 @@
 export const Todo = (props) => {
-  const { title, userid, complted } = props;
-  return <p>{`${title}(ユーザ：${userid})`} </p>;
+  const { title, userid, completed } = props;
+  const compeleteMark = completed ? "【完】" : "【未】";
+  return <p>{`${compeleteMark}${title}(ユーザ：${userid})`} </p>;
 };
