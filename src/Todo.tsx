@@ -4,7 +4,7 @@ type TodoType = {
   completed: boolean;
 };
 
-export const Todo = (props) => {
+export const Todo = (props: TodoType) => {
   const { title, userid, completed } = props;
   const compeleteMark = completed ? "【完】" : "【未】";
   return <p>{`${compeleteMark}${title}(ユーザ：${userid})`} </p>;
